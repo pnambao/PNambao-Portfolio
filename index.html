@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panje Nambao</title>
     <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Maven+Pro:wght@500&family=Montserrat+Alternates:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/04c06b8dbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" >
+    
 </head>
 <body>
     <header>
+        <!--
         <div class="logo">
             <img src="Assets/kitty.png" alt="cat lying down">
         </div>
+    -->
         <button class = "nav -toggle" aria-label="toggle navigation">
             <span class = "hamburger"></span>
         </button>
@@ -32,12 +38,12 @@
         <h1 class="introTitle">
             Hello, I am <strong>Panje Nambao</strong>
         </h1>
-        <p class="subTitle"> Junior Developer and Illustrator</p>
-        <img src="./Assets/20180423_004111.jpg" alt="Panje smiling">
+        <p class="introSubtitle"> Junior Developer and Illustrator</p>
+        <img src="./Assets/20180423_004111.jpg" alt="Panje smiling" class="introImg">
     </section>
 
     <!--Services-->
-    <section class="servicesSection" id="services">
+    <section class="myServices" id="services">
         <h2 class="servicesTitle"> What I do</h2>
             <div class="services">
                 <div class="service">
@@ -61,7 +67,7 @@
                         </p>
                 </div>
             
-                <a href="#work" class="bottom">My work</a>
+              <!-- <a href="#work" class="button">My work</a> -->
             </div>
     </section>
 
@@ -95,7 +101,7 @@
 
             <!--Item2-->
             <a href="#" class="portfolioItem">
-                <img src="/Assets/kitty.png" alt="cat lying down" class="portfolioImage">
+                <img src="./Assets/kitty.png" alt="cat lying down" class="portfolioImage">
             </a>
 
             <!--Item3-->
@@ -107,7 +113,7 @@
 
     <!--footer-->
     <footer>
-        <a href="panjenambao@gmail.com" class="emailLink">Panjenambao@gmail</a>
+        <a href="mailto:panjenambao@gmail.com" class="emailLink">Panjenambao@gmail</a>
         <ul class="socialMedia">
             <li class="socialMediaItem"><a class="socialMediaLink" 
                 href="https://www.linkedin.com/in/panje-nambao-ba7a00154/">linkedin</a></li>
