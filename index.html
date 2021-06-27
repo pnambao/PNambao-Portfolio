@@ -15,20 +15,22 @@
 </head>
 <body>
     <header>
-        <!--
+
+        <!-- FOR LATER
         <div class="logo">
             <img src="Assets/kitty.png" alt="cat lying down">
         </div>
-    -->
+    
         <button class = "nav -toggle" aria-label="toggle navigation">
-            <span class = "hamburger"></span>
-        </button>
+            <span class = "pizza"></span>
+        </button> -->
+
         <nav class="nav">
             <ul class="navList">
-                <li class="navItem"><a href="#home" class="navLink">Home</a></li>
-                <li class="navItem"><a href="#services" class="navLink">My Sevrvices</a></li>
-                <li class="navItem"><a href="#about" class="navLink">About me</a></li>
-                <li class="navItem"><a href="#work" class="navLink">My work</a></li>
+                <li class="navItem"><a href="#home" class="navLink button">Home</a></li>
+                <li class="navItem"><a href="#services" class="navLink button">My Services</a></li>
+                <li class="navItem"><a href="#about" class="navLink button">About me</a></li>
+                <li class="navItem"><a href="#work" class="navLink button">My work</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +38,7 @@
     <!--Introduction-->
     <section class="intro" id="home">
         <h1 class="introTitle">
-            Hello, I am <strong>Panje Nambao</strong>
+            Hello, I am <br><b>Panje Nambao</b>
         </h1>
         <p class="introSubtitle"> Junior Developer and Illustrator</p>
         <img src="./Assets/20180423_004111.jpg" alt="Panje smiling" class="introImg">
@@ -49,7 +51,8 @@
                 <div class="service">
                     <h3>Web Development</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing at in tellus integer feugiat scelerisque varius. Vestibulum morbi blandit cursus risus at ultrices. Vitae et leo duis ut diam quam. Ut enim blandit volutpat maecenas volutpat blandit aliquam.
+                            ​Refactoring is one of the tasks handed to junior developers, hence, this task helps to develop problem-solving and troubleshooting skills for beginner coders. The client (Horiseon marketing agency) asked for a codebase that follows accessibility standards, so that their site is optimized for search engines. I declattered the CSS code for the page, added 'alt' attributes(so that images on the page would be accessible to people with disabilities), and included some semantic tags in the html file to improve search engine optimization. Click link to check site:
+                            <a href="https://pnambao.github.io/Refactoring-for-a-marketing-agency/" class="refactoring"> Refactoring task</a>
                         </p>
                 </div>
             
@@ -74,7 +77,7 @@
     <!--About Me-->
     <section class="aboutMe" id="about">
         <h2 class="aboutMeTitle">Who I am</h2>
-            <p class="aboutMeSubtitle"></p>
+            <p class="aboutMeSubtitle"> <b>"Damned if you do, damned if you don't"</b></p>
 
         <div class="aboutMeBody">
             <p>
@@ -85,13 +88,13 @@
             </p>
         </div>
 
-        <img src="./Assets/20180516_152659.jpg" alt="Panje on the grass">
+        <img src="./Assets/20180516_152659.jpg" alt="Panje on the grass" class="aboutImg">
     </section>
 
     <!--My Work-->
     <section class="myWork" id="work">
         <h2 class="myWorkTitle">My Work</h2>
-        <p class="myWorkSubtitle"></p>
+        <p class="myWorkSubtitle"> <b>A selection of my work</b></p>
 
         <div class="portfolio">
             <!--Item1-->
@@ -113,14 +116,16 @@
 
     <!--footer-->
     <footer>
-        <a href="mailto:panjenambao@gmail.com" class="emailLink">Panjenambao@gmail</a>
-        <ul class="socialMedia">
-            <li class="socialMediaItem"><a class="socialMediaLink" 
+
+        <h2> CONTACT ME:</h2>
+        <a href="mailto:panjenambao@gmail.com" class="emailLink button">Panjenambao@gmail</a>
+        <ul class="socialMedia" class="contact">
+            <li class="socialMediaItem"><a class="socialMediaLink button" 
                 href="https://www.linkedin.com/in/panje-nambao-ba7a00154/">linkedin</a></li>
-            <li class="socialMediaItem"><a class="socialMediaLink" 
+            <li class="socialMediaItem"><a class="socialMediaLink button" 
                 href="https://github.com/pnambao">Github</a></li>
-            <li class="socialMediaItem"><a class="socialMediaLink" 
-                href="">Facebook</a></li>
+            <li class="socialMediaItem"><a class="socialMediaLink button" 
+                href="https://www.facebook.com/panje.nambao">Facebook</a></li>
         </ul>
 
     </footer>

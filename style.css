@@ -52,7 +52,12 @@ strong {
     font-weight: var(--fw-bold);
 }
 
-/* can't get it to sit right
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+
 
 .button {
     display: inline-block;
@@ -66,12 +71,19 @@ strong {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+.refactoring {
+    color: white;
 }
 
 .button:hover {
     transform: scale(1.1);
+    color: white;
 }
-*/
+
 
 section {
     padding: 5em;
@@ -183,4 +195,75 @@ h3 {
 
  .services + .services {
      margin-left: 2em;
+ }
+
+ /*about me*/
+
+ .aboutImg {
+     max-width: 400px;
+     display: flex;
+     justify-content: center;
+ }
+ .aboutMe {
+     max-width: 1000px;
+     margin: 0 auto;
+
+ }
+
+ @media (min-width: 600px) {
+     .aboutMe {
+         display: grid;
+     }
+
+ }
+
+ /* my work */
+
+ .myWork {
+    background-color: #282c59;
+    text-align: center;
+ }
+
+ .aboutMeSubtitle, .myWorkSubtitle {
+     color: snow;
+     font-weight: var(--fw-bold);
+ }
+
+ .portfolioImage {
+    display: inline-block;
+    flex-direction: row;
+    margin: 5em auto;
+    max-width: 400px;
+ }
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+ .navList {
+     position: fixed;
+     justify-content: space-evenly;
+     background: var(--clr-accent);
+     color: var(--clr-dark);
+     font-weight: var(--fw-bold);
+     margin: 10px;
+
+ }
+
+ .navItem {
+     display: inline;
+     padding: 8px;
+     font-family: var(--ff-secondary);
+     text-decoration: none;
+ }
+
+ .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px;
+    padding: 30px;
  }
