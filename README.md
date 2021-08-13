@@ -11,7 +11,7 @@ It had to have any applications I have doe so far, so that when links to the app
 
 This is an example image of the page: 
 
-![picture](assets/portfolio.png)
+![picture](./assets/portfolio.png)
 
 
 ## Credits

@@ -86,7 +86,7 @@ strong {
 
 
 section {
-    padding: 5em;
+    padding: 5em 2em;
 }
 
 /* Typography*/
@@ -116,11 +116,15 @@ h3 {
  .introSubtitle {
      margin: 0;
      font-size: var(--fs-h3);
-    background-color: var(--clr-accent);
-    font-family: var(--ff-secondary);
-    color: var(--clr-dark);
-    margin-bottom: 1em;
-    text-align: center;
+     background-color: var(--clr-accent);
+     font-family: var(--ff-secondary);
+     color: var(--clr-dark);
+     margin-bottom: 1em;
+     text-align: center;
+ }
+
+ .introTitle strong {
+     display: block;
  }
 
  .aboutMeTitle,
@@ -132,7 +136,7 @@ h3 {
 
  /* Intro*/
 
- .into {
+ .intro {
      position: relative;
  }
 
@@ -140,12 +144,13 @@ h3 {
      .intro{
          display: grid;
          width: min-content;
-         margin: 0;
-         grid-column-gap: 1em;
+         margin: 0 auto;
+         grid-column-gap: 1em ;
          grid-template-areas:
-         "img title"
-         "img subtitle";
-         grid-template-columns: min-content max-content;
+            "img title"
+            "img subtitle";
+        grid-template-columns: min-content max-content;
+         
      }
 
     .introImg {
@@ -267,3 +272,20 @@ h3 {
     margin: 30px;
     padding: 30px;
  }
+
+
+ /* Scrollbar styling*/
+body::-webkit-scrollbar {
+    width: 15px; /* width of the entire scrollbar */
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #6f3d59;/* color of the tracking area */
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); /*shadow*/
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-accent);/* color of the scroll thumb */
+    border-radius: 30px;/* roundness of the scroll thumb */
+    border: 1px solid ;/* creates padding around scroll thumb */
+  }
